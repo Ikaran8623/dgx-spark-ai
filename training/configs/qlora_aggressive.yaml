@@ -1,0 +1,42 @@
+# Aggressive QLoRA Configuration for DGX Spark
+# Faster training with larger batches, fewer epochs
+# Good for quick iteration and prototyping
+
+model: unsloth/Qwen2.5-Coder-7B-Instruct-bnb-4bit
+max_seq_length: 2048
+
+# LoRA Configuration (smaller rank = faster training)
+lora_rank: 16
+lora_alpha: 32
+lora_dropout: 0.05
+target_modules:
+  - q_proj
+  - k_proj
+  - v_proj
+  - o_proj
+  - gate_proj
+  - up_proj
+  - down_proj
+
+# Training Configuration (aggressive)
+epochs: 1
+batch_size: 4
+gradient_accumulation: 2
+learning_rate: 5.0e-4
+warmup_ratio: 0.03
+weight_decay: 0.01
+optimizer: adamw_torch
+lr_scheduler: cosine
+packing: false
+
+# Checkpointing
+save_steps: 50
+save_total_limit: 2
+logging_steps: 1
+
+# Precision
+bf16: true
+gradient_checkpointing: true
+max_grad_norm: 0.3
+
+seed: 42

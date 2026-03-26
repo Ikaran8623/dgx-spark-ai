@@ -1,0 +1,6 @@
+# vLLM Inference Requirements for DGX Spark
+# Tested with Python 3.12, CUDA 13.0, NVIDIA GB10
+
+vllm>=0.18.0
+openai>=1.0.0
+requests>=2.31.0

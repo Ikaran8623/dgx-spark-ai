@@ -1,0 +1,7 @@
+[Unit]
+Description=vLLM Health Check Watchdog
+After=vllm-server.service
+
+[Service]
+Type=oneshot
+ExecStart=%h/dgx-spark-ai/systemd/vllm-watchdog.sh

@@ -1,0 +1,19 @@
+[Unit]
+Description=vLLM Inference Server (GPT-OSS 120B on DGX Spark)
+After=network-online.target
+Wants=network-online.target
+StartLimitBurst=5
+StartLimitIntervalSec=600
+
+[Service]
+Type=simple
+# UPDATE: Set WorkingDirectory to your dgx-spark-ai repo location
+WorkingDirectory=%h/dgx-spark-ai
+ExecStart=%h/dgx-spark-ai/inference/start_vllm_gptoss.sh
+Restart=always
+RestartSec=15
+Environment=VLLM_HOST=0.0.0.0
+Environment=VLLM_PORT=8000
+
+[Install]
+WantedBy=default.target

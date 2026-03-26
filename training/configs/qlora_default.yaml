@@ -1,0 +1,40 @@
+# Default QLoRA Configuration for DGX Spark
+# Balanced between quality and training speed
+
+model: unsloth/Qwen2.5-Coder-32B-Instruct-bnb-4bit
+max_seq_length: 4096
+
+# LoRA Configuration
+lora_rank: 64
+lora_alpha: 128
+lora_dropout: 0.05
+target_modules:
+  - q_proj
+  - k_proj
+  - v_proj
+  - o_proj
+  - gate_proj
+  - up_proj
+  - down_proj
+
+# Training Configuration
+epochs: 3
+batch_size: 2
+gradient_accumulation: 4
+learning_rate: 2.0e-4
+warmup_ratio: 0.05
+weight_decay: 0.01
+optimizer: adamw_8bit
+lr_scheduler: cosine
+packing: true
+
+# Checkpointing
+save_steps: 100
+save_total_limit: 3
+logging_steps: 10
+
+# Precision
+bf16: true  # GB10 supports bfloat16
+gradient_checkpointing: unsloth  # Uses Unsloth's optimized checkpointing
+
+seed: 42

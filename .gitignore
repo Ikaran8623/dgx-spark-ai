@@ -1,0 +1,53 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+*.egg-info/
+dist/
+build/
+*.egg
+
+# Virtual environments
+vllm-env/
+venv/
+.venv/
+env/
+
+# Model weights & checkpoints (large files)
+*.bin
+*.safetensors
+*.gguf
+*.ggml
+*.pt
+*.pth
+output/
+checkpoints/
+merged-model/
+
+# HuggingFace cache
+.cache/
+
+# Training artifacts
+wandb/
+runs/
+logs/
+training_stats.json
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Environment files with secrets
+.env
+.env.local
+
+# Jupyter
+.ipynb_checkpoints/
