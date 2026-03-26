@@ -30,7 +30,7 @@ A complete toolkit for running LLM inference and training on the [NVIDIA DGX Spa
 
 ```bash
 # 1. Clone the repo
-git clone https://github.com/YOUR_USER/dgx-spark-ai.git
+git clone https://github.com/jl-codes/dgx-spark-ai.git
 cd dgx-spark-ai
 
 # 2. Create Python environment (if you don't have one)
